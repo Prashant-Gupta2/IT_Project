@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Servicet</title>
+          <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+          <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+          <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+          <style>
+                    .box{
+            height: 400px;
+            width: 430px;
+            background-color: azure;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px 5px gray;
+            font-family: Arial;
+          }
+          pre{
+            font-size: 15px;
+            font-family: Arial;
+          }
+          .box:hover{
+            transform: scale(1.01);
+            transition: 0.1s;
+            cursor: pointer;
+          }
+          .dropdown li{
+          cursor: pointer;
+         }
+         .bi-star-fill{
+          color: red;
+         }
+         .nav-link:hover{
+          color:gray;
+         }
+          </style>
+</head>
+<body class="container-fluid">
+  <div class="modal fade" id="login-it">
+    <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+       <div class="modal-header">
+          <div class="fs-3 mb-5" align="center">Plesase Login Your Account</div>
+          <button class="btn btn-close" data-bs-dismiss="modal"></button>
+       </div>
+       <div class="modal-body">
+          <dl>
+             <dt>Name Id:</dt>
+           <div class="input-group">
+            <span class="bi bi-person input-group-text"></span>
+            <input type="text" name="user" placeholder="Enter name" class="form-control">
+            <span class="bi bi-star-fill input-group-text"></span>       
+           </div>
+             <dt>Password:</dt>
+            <div class="input-group">
+              <span class="bi bi-lock input-group-text"></span>
+             <input type="password" name="password" placeholder="Password" class="form-control">
+             <span class="bi bi-star-fill input-group-text"></span>
+            </div>
+          </dl>
+          <div class="d-flex justify-content-around">
+            <button class="btn btn-warning text-white bi bi-person"> SignUp</button>
+            <button class="btn btn-success text-white bi bi-arrow-right-square"> SignIn</button>
+          </div>
+       </div>
+     </div>
+    </div>      
+   </div>       
+  
+   <div class="modal fade" id="SignUp">
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+         <div class="modal-header">
+         <div class="center fs-3 ms-5"> Registration Form</div>
+         <button class="btn btn-close" data-bs-dismiss="modal"></button>
+         </div>
+         <div class="modal-body">
+          <dl>
+            <dt>Full Name:</dt>
+             <input type="text" name="user" placeholder="Full Name" class="form-control">
+             <dt>Email Id:</dt>
+             <input type="email" name="email" id="Email Id" class="form-control">
+             <dt>Number:</dt>
+             <input type="text" name="user" placeholder="Full Name" class="form-control" placeholder="Enter phone">
+             <dt>DOB:</dt>
+             <input type="date" name="email" id="Email Id" class="form-control" placeholder="Date of Birth">
+             <dt>Password:</dt>
+             <input type="password" name="password" placeholder="password" class="form-control">
+             <dt>Confirm password:</dt>
+             <input type="password" name="password" placeholder="Confirm password" class="form-control">
+             <label for="gender" class="my-3">Gender:</label>
+             <input type="radio" name="gender" id="gender">Male
+             <input type="radio" name="gender" id="gender">Female <br>
+             <input type="checkbox" name="checkbox">
+             <p>I've read and Accept the Terms and Conditions</p>
+             <div class="d-flex justify-content-around">
+              <button class="btn btn-warning text-white">Already have an account</button>
+              <button class="btn btn-success text-white">Register</button>
+             </div>
+          </dl>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <div class="modal fade" id="password">
+    <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+      <div class="modal-header">
+       <div class="fs-3 ms-5 fw-bold"> Forget Password:</div>
+       <button class="btn btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+<div class="input-group my-3">
+  <span class="bi bi-star-fill input-group-text"></span>
+  <input type="password" name="password" placeholder="Current password" class="form-control">
+</div> 
+<div class="input-group my-2">
+  <span class="bi bi-star-fill input-group-text"></span>
+  <input type="password" name="password" placeholder="New password" class="form-control">
+</div>    
+   <div class="input-group">
+    <span class="bi bi-star-fill input-group-text"></span>
+    <input type="password" name="password" placeholder="Confirm password" class="form-control">
+   </div>
+   <button class="btn btn-success text-white my-4 ms-5" align="right"> Change password</button>
+      </div>
+     </div>
+    </div>
+   </div>
+
+          <div class="text-center my-3 p-4 fs-2 fw-bold">Naresh Institute and Technologies</div>
+          <div class="bg-dark">
+             <div class="d-flex justify-content-between">
+             <div>
+              <ul class="nav bg-dark p-2 rounded w-100">
+                <li class="nav-item"> <a class="nav-link bi bi-house-fill text-light active" href="naresh_it.html"> Home</a></li> 
+                <li class="nav-item"> <a class="nav-link bi bi-question-circle text-light" href="it_table.html"> About</a></li>
+                <li class="nav-item"> <a class="nav-link bi bi-question-circle text-light" href="servive_it.html"> Service</a></li>
+                <li class="nav-item"> <a class="nav-link text-primary bi bi-telephone text-light" href="contact-it.html"> Contact Us</a></li> 
+                </ul> 
+             </div>
+              <div class="mt-2">
+                  <div class="dropdown">
+                    <button class="dropdown-toggle bg-dark btn btn-dark fs-5 text-light" data-bs-toggle="dropdown"><span class="bi bi-arrow-right-square"></span> Sign In</button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item bi bi-arrow-right-square" data-bs-toggle="modal" data-bs-target="#login-it"> Sign In</a></li>
+                        <li><a class="dropdown-item bi bi-person-fill" data-bs-toggle="modal" data-bs-target="#SignUp"> Sign Up</a></li>
+                        <li><a class="dropdown-item bi bi-lock" data-bs-toggle="modal" data-bs-target="#password"> Change Password</a></li>
+                      </ul>
+                  </div>
+              </div>
+             </div>
+            </div>
+          <div class="text-center my-4 fs-3 fw-bold" id="survice">SERVICES</div>
+          <div class="d-flex justify-content-around my-5">
+          <div class="box">
+            <img src="./images/web-pic1.jpg" alt="#" height="250" width="250">
+           <div class="ms-3 fw-bold p-3">WEB DESIGN!!</div>
+           <pre class="ms-4">
+        Online ordering system helps to maintain a Better
+        Business Relationship with your customers, which
+        is a key factor to run any successful business.</pre>
+          </div>
+          <div class="box">
+           <img src="./images/it-pic2.png" alt="#">
+          <div class="ms-3 fw-bold p-3">IT SERVICES!!</div>
+          <pre class="ms-4">
+        We are ideally located in Larbert meaning we can
+        offer IT support to businesses throughout Scotland.
+        We take the hassle and worry out of your IT system
+        by providing preventative and proactive IT support.
+          </pre>
+          </div> 
+          <div class="box">
+                    <img src="./images/web_marketing-pic.png" alt="#" height="230" width="230">
+                  <div class="ms-3 fw-bold p-3">WEB MARKETING!!</div>
+                  <pre class="ms-4">
+                We are passionate about digital content creation,
+                strategy and delivery. We deliver results by
+                designing marketing strategies which improve our
+                clients brand visibility.
+                  </pre>
+                  </div>
+                 </div> 
+                 <div class="text-center bg-dark text-white py-5 fs-5 shadow">Naresh Technologies</div>
+                 <div class="d-flex justify-content-around bg-dark text-white pb-4">
+                  <div>
+                    <ul class="shadow">
+                      <li class="bi bi-facebook"> Facebook</li>
+                      <li class="bi bi-google"> Google</li>
+                      <li class="bi bi-twitter"> Twitter</li>
+                      <li class="bi bi-youtube"> Youtube</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="shadow">
+                      <li>Home</li>
+                      <li>About</li>
+                      <li>Service</li>
+                      <li>Contact</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="shadow">
+                     <li> Name : Naresh Istitute</li>
+                     <li>Email : info@nareshit.com</li>
+                     <li> Contact : +91-xxxxxxxxxx</li>
+                     <li> Address : Sr nagar, Hyderabad, Telangana, India</li>
+                    </ul>
+                  </div>
+                 </div>     
+</body>
+</html>
