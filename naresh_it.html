@@ -3,155 +3,27 @@
 <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Naresh IT Template</title>
+          <title>Table</title>
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
           <style>
-           .course{
-            display: grid;
-            grid-template-columns: 8fr 4fr;
-           }
-           .bi-check{
-          font-size: 22px;
-          font-weight:800;
-          color: green;
-           }
-           .job{
-           display: grid;
-           grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
-           }
-          .circle-y{
-           border: 3px solid yellow;
-           height: 100px;
-           width: 100px;
-           border-radius: 50%;
-          }
-          .circle-y span{
-            position: absolute;
-            margin-top: 10px;
-            left: 48px;
-            font-size: 45px;
-            color: yellow;
-            font-weight: bold;
-          }
-          .circle-r{
-           border: 3px solid red;
-           height: 100px;
-           width: 100px;
-           border-radius: 50%;
-           position: relative;
-          }
-          .circle-r span{
-            position: absolute;
-            margin-top: 10px;
-            left: 33px;
-            font-size: 45px;
-            color: red;
-            font-weight: bold;
-          }
-          .circle-g{
-           border: 3px solid green;
-           height: 100px;
-           width: 100px;
-           border-radius: 50%;
-          }
-          .circle-g span{
-            position: absolute;
-            margin-top: 10px;
-            left: 48px;
-            font-size: 45px;
-            color: green;
-            font-weight: bold;
-          }
-          .circle-b{
-           border: 3px solid blue;
-           height: 100px;
-           width: 100px;
-           border-radius: 50%;
-           position: relative;
-          }
-          .circle-b span{
-            position: absolute;
-            margin-top: 10px;
-            left: 33px;
-            font-size: 45px;
-            color:blue;
-            font-weight: bold;
-          }
-          .line1{
-          display: grid;
-          grid-template-columns: 10fr 2fr;
-          justify-content: space-between;
-          }
-          .line2{
-          display: grid;
-          grid-template-columns: 2fr 10fr;
-          justify-content: space-between;
-          }
-          .line3{
-          display: grid;
-          grid-template-columns: 10fr 2fr;
-          justify-content: space-between;
-          }
-          .line4{
-          display: grid;
-          grid-template-columns:2fr 10fr;
-          justify-content: space-between;
-          }
-          .student{
-            background-color: burlywood;
-            display: grid;
-            grid-template-columns: 3fr 3fr 3fr 3fr;
-            justify-content: space-around;
-          }
-          .title2{
-            background-color: burlywood;
-          }
-          .box{
-            height: 400px;
-            width: 430px;
-            background-color: azure;
-            border-radius: 10px;
-            box-shadow: 0px 0px 8px 5px gray;
-            font-family: Arial;
-            transition: 0.2s;
-          }
-          pre{
-            font-size: 15px;
-            font-family: Arial;
-          }
-          .box:hover{
-            transform: scale(1.02);
-            transition: 0.1s;
-            cursor: pointer;
-          }
-           .shadow li{
-            text-shadow: 0px 0px 2px white;
-            cursor: pointer;
-          }
-         .bi-eye{
-          background-color: rgb(214, 214, 18);
-          border-radius: 10px;
-          width: 50px;
-          height: 20px;
-          margin-top: 15px;
+              .dropdown li{
+          cursor: pointer;
          }
          .bi-star-fill{
           color: red;
          }
-         .bi-lock,.bi-person{
-          color: red;
-         }
-         .dropdown li{
+         .bi-eye:hover{
           cursor: pointer;
+          color:chartreuse;
          }
-         nav a:hover{
-          color: white;
+         .bi-eye{
+          color: yellow;
          }
-         .burn
-         {
-          mix-blend-mode: color-burn;
+         td a{
+          height: 15px;
          }
           </style>
 </head>
@@ -211,9 +83,9 @@
              <label for="gender" class="my-3">Gender:</label>
              <input type="radio" name="gender" id="gender">Male
              <input type="radio" name="gender" id="gender">Female <br>
-             <input type="checkbox" name="checkbox" class="form-check-input">
-             <span> I've read and Accept the Terms and Conditions</span>
-             <div class="d-flex justify-content-around my-3">
+             <input type="checkbox" name="checkbox">
+             <p>I've read and Accept the Terms and Conditions</p>
+             <div class="d-flex justify-content-around">
               <button class="btn btn-warning text-white">Already have an account</button>
               <button class="btn btn-success text-white">Register</button>
              </div>
@@ -249,312 +121,187 @@
     </div>
    </div>
 
-     <div class="text-center my-3 p-4 fs-2 fw-bold">Naresh Institute and Technologies</div>
-      <div class="bg-dark">
-         <div class="d-flex justify-content-between">
-         <div>
-          <ul class="nav bg-dark p-2 rounded w-100">
-            <li class="nav-item"> <a class="nav-link bi bi-house-fill text-light" href="#home"> Home</a></li> 
-            <li class="nav-item"> <a class="nav-link bi bi-question-circle text-light" href="it_table.html"> About</a></li>
-            <li class="nav-item"> <a class="nav-link bi bi-question-circle text-light" href="servive_it.html"> Service</a></li>
-            <li class="nav-item"> <a class="nav-link text-primary bi bi-telephone text-light" href="contact-it.html"> Contact Us</a></li> 
-            </ul> 
-         </div>
-          <div class="mt-2">
-              <div class="dropdown">
-                <button class="dropdown-toggle bg-dark btn btn-dark fs-5 text-light" data-bs-toggle="dropdown"><span class="bi bi-arrow-right-square"></span> Sign In</button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item bi bi-arrow-right-square" data-bs-toggle="modal" data-bs-target="#login-it"> Sign In</a></li>
-                    <li><a class="dropdown-item bi bi-person-fill" data-bs-toggle="modal" data-bs-target="#SignUp"> Sign Up</a></li>
-                    <li><a class="dropdown-item bi bi-lock" data-bs-target="#password" data-bs-toggle="modal"> Change Password</a></li>
-                  </ul>
+          <div class="text-center my-3 p-4 fs-2 fw-bold">Naresh Institute and Technologies</div>
+          <div class="bg-dark">
+             <div class="d-flex justify-content-between">
+             <div>
+              <ul class="nav bg-dark p-2 rounded w-100">
+                <li class="nav-item"> <a class="nav-link bi bi-house-fill text-white active" href="naresh_it.html"> Home</a></li> 
+                <li class="nav-item"> <a class="nav-link bi bi-question-circle text-white" href="it_table.html"> About</a></li>
+                <li class="nav-item"> <a class="nav-link bi bi-question-circle text-white" href="servive_it.html"> Service</a></li>
+                <li class="nav-item"> <a class="nav-link text-primary bi bi-telephone text-white" href="contact-it.html"> Contact Us</a></li> 
+                </ul> 
+             </div>
+              <div class="mt-2">
+                  <div class="dropdown">
+                    <button class="dropdown-toggle bg-dark btn btn-dark fs-5 text-white" data-bs-toggle="dropdown"><span class="bi bi-arrow-right-square"></span> Sign In</button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item bi bi-arrow-right-square" data-bs-toggle="modal" data-bs-target="#login-it"> Sign In</a></li>
+                        <li><a class="dropdown-item bi bi-person-fill" data-bs-target="#SignUp" data-bs-toggle="modal"> Sign Up</a></li>
+                        <li><a class="dropdown-item bi bi-lock" data-bs-target="#password" data-bs-toggle="modal"> Change Password</a></li>
+                      </ul>
+                  </div>
               </div>
+             </div>
+            </div>
+            <div class="modal fade" id="angular">
+             <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                 <div class="fs-4 ms-5">Details:</div>
+                 <button class="btn btn-close bg-info" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-around">
+                  <div class="me-5 text-info">
+                    <div>Course:</div>
+                    <div>Faculty:</div>
+                    <div>Duration:</div>
+                    <div>Timings:</div>
+                  </div>
+                  <div class="ms-5 text-danger">
+                    <div>Angular 8</div>
+                    <div>Shudakhar Sharma Sir</div>
+                    <div>45 Days</div>
+                    <div>07:30AM</div>
+                    <p>Angular 8 is a client-side TypeScript based framework <br>
+                      which is used to create dynamic web <br>
+                     It is very similar to its previous versions except having some extensive features.</p>
+                  </div>
+                </div>
+                <button class="btn btn-warning bi bi-bookmark-x-fill text-white w-25 text-right m-3" data-bs-dismiss="modal"> close</button>
+              </div>
+             </div>
+            </div>
+            <div class="modal fade" id="nodejs">
+              <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content bg-dark text-white">
+                 <div class="modal-header">
+                  <div class="fs-5 ms-5">Details:</div>
+                  <button class="btn btn-close bg-info" data-bs-dismiss="modal"></button>
+                 </div>
+                 <div class="modal-body d-flex justify-content-around">
+                   <div class="me-5 text-info">
+                     <div>Course:</div>
+                     <div>Faculty:</div>
+                     <div>Duration:</div>
+                     <div>Timings:</div>
+                   </div>
+                   <div class="ms-5 text-danger">
+                    <div>Node Js</div>
+                    <div>Sambha Sir</div>
+                    <div>45 Days</div>
+                    <div>09:00AM</div>
+                    <p>
+                      Node.js connects the ease of a scripting language <br>
+                       (JavaScript) with the power of Unix network programming. <br>
+                        Node.js was built on the Google V8 JavaScript engine <br>
+                        since it was open-sourced under the BSD license.
+                    </p>
+                   </div>
+                 </div>
+                 <button class="btn btn-warning bi bi-bookmark-x-fill text-white w-25 text-right m-3" data-bs-dismiss="modal"> close</button>
+               </div>
+              </div>
+             </div>
+             
+             <div class="modal fade" id="java">
+              <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content bg-dark text-white">
+                 <div class="modal-header">
+                  <div class="fs-5 ms-5">Details:</div>
+                  <button class="btn btn-close bg-info" data-bs-dismiss="modal"></button>
+                 </div>
+                 <div class="modal-body d-flex justify-content-around">
+                   <div class="me-5 text-info">
+                     <div>Course:</div>
+                     <div>Faculty:</div>
+                     <div>Duration:</div>
+                     <div>Timings:</div>
+                   </div>
+                   <div class="ms-5 text-danger">
+                    <div>JAVA</div>
+                    <div>Hari Krishan Sir</div>
+                    <div>60 Days</div>
+                    <div>04:30PM</div>
+                    <p>
+                      Java is an object-oriented programming language developed by <br>
+                      Sun Microsystems, and it was released in 1995. ... Java Virtual Machine <br>
+                       (JVM) executes Java code, but it has been written in platform-specific <br>
+                       languages such as C/C++/ASM, etc.
+                    </p>
+                    </p>
+                   </div>
+                 </div>
+                 <button class="btn btn-warning bi bi-bookmark-x-fill text-white w-25 text-right m-3" data-bs-dismiss="modal"> close</button>
+               </div>
+              </div>
+             </div>
+          <div class="bg-info text-center fs-4 p-2 my-3">Details</div>
+          <table cellpadding="8" cellspacing="10" border="1" class="w-100 mb-5">
+            <thead class="bg-warning">
+             <tr class="table-row">
+              <th>ID</th>
+              <th>Course Name</th>
+              <th>Faculty Name</th>
+              <th>Duration</th>
+              <th>Timings</th>
+              <th>View</th>
+             </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row border">
+              <td class="border">1</td>
+              <td class="border">Angular 8</td>
+              <td class="border">Shudakar Sharma Sir</td>
+              <td class="border">45 Days</td>
+              <td class="border">07:30 AM</td>
+              <td class="bi bi-eye border rounded bg-secondary"><a data-bs-target="#angular" data-bs-toggle="modal" class="text-white nav-link"> view</a></td>
+            </tr>
+            <tr class="table-row border">
+              <td class="border">2</td>
+              <td class="border">Node Js</td>
+              <td class="border">Sambha Sir</td>
+              <td class="border">45 Days</td>
+              <td class="border">07:30 AM</td>
+              <td class="bi bi-eye border rounded bg-secondary"><a data-bs-target="#nodejs" data-bs-toggle="modal" class="text-white nav-link"> view</a></td>
+            </tr>
+            <tr class="table-row border">
+              <td class="border">3</td>
+              <td class="border">JAVA</td>
+              <td class="border">Hari Krishna Sir Sir</td>
+              <td class="border">60 Days</td>
+              <td class="border">04:30 PM</td>
+              <td class="bi bi-eye border rounded bg-secondary"> <a data-bs-target="#java" data-bs-toggle="modal" class="text-white nav-link"> view</a></td>
+            </tr>
+            </tbody>
+          </table> 
+          
+          <div class="text-center bg-dark text-white py-5 fs-5 shadow">Naresh Technologies</div>
+          <div class="d-flex justify-content-around bg-dark text-white pb-4">
+           <div>
+             <ul class="shadow">
+               <li class="bi bi-facebook"> Facebook</li>
+               <li class="bi bi-google"> Google</li>
+               <li class="bi bi-twitter"> Twitter</li>
+               <li class="bi bi-youtube"> Youtube</li>
+             </ul>
+           </div>
+           <div>
+             <ul class="shadow">
+               <li>Home</li>
+               <li>About</li>
+               <li>Service</li>
+               <li>Contact</li>
+             </ul>
+           </div>
+           <div>
+             <ul class="shadow">
+              <li> Name : Naresh Istitute</li>
+              <li>Email : info@nareshit.com</li>
+              <li> Contact : +91-xxxxxxxxxx</li>
+              <li> Address : Sr nagar, Hyderabad, Telangana, India</li>
+             </ul>
+           </div>
           </div>
-         </div>
-        </div>
-
-    <div class="carousel slide my-3" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-         <img src="./images/it-pic1.jpg" class="w-100" height="500" data-bs-interval="4800" alt="#">
-        </div>
-        <div class="carousel-item">
-         <img src="./images/it-pic2.jpg" class="w-100" height="500" data-bs-interval="4500" alt="#">
-        </div>
-        <div class="carousel-item">
-         <img src="./images/it-pic3.jpg" class="w-100" height="500" alt="#" data-bs-interval="4500" >
-        </div>
-      </div>
-    </div>
-    <div align="center">
-      <button class="btn btn-warning p-2 fs-5 text-white">Show me What's in this package</button>
-    </div>
-    <div align="center">
-      <button class="btn btn-primary my-3 p-2 fs-5 text-white">What is the package</button>
-  </div>
-  <div align="center">
-   <p>
-          * A package is a small container in which a quantity of something is sold. Packages are either small boxes made of <br> thin cardboard, or bags or envelopes made of paper or plastic. ... When a product is packaged, it is put into <br> containers to be sold.</p>
-  </div>
-  <div class="course">
-    <div>
-      <table cellspacing="10" border="1" cellpadding="15" width="100%" class="mx-2">
-          <thead>
-             <tr class="table-row bg-dark" align="center" border="1">
-              <th class="text-secondary">Department</th>
-              <th class="text-secondary">Included</th>      
-             </tr>       
-          </thead>
-          <tbody>
-           <tr class="table-row border" align="center"> 
-             <td class="fw-bold">M.Tech</td> 
-             <td class="bi bi-check"></td>
-            <tr class="table-row border" align="center">
-             <td class="fw-bold">B.Tech</td> 
-             <td class="bi bi-check"></td> 
-            </tr> 
-            <tr class="table-row bolder" align="center">
-             <td class="fw-bold">MCA</td> 
-             <td class="bi bi-check"></td>
-            </tr>  
-           </tr>
-          </tbody>
-      </table>
-  </div>
-  <div class="bolder p-1 ms-3 border rounded ">
-       <img src="./images/it-pic2.jpg" alt="#" height="240" width="500" align="center">
-  </div>
-  </div>
-  <div class="text-center fs-2 mt-5 bg-info pb-4">Whai is the job</div>
-
-  <div class="job bg-info">
-     <div>
-      <div class="fs-5 my-2">Types of jobs</div>
-      <img src="./images/job-logo1.jpg" alt="#" width="60" class="text-info burn border rounded-circle">
-      <div> Volcanologist. ...</div><br>
-         <div>Quantum physicist. ...</div><br>
-         <div>Oceanographer. ...</div><br>
-         <div>Biomedical engineer. ...</div>
-     </div>
-     <div>
-          <div class="fs-5 my-2">Define job profile</div>
-          <img src="./images/job-logo2.jpg" alt="#" width="60" class="text-info burn border rounded-circle">
-         <pre >
-Job profile 
-developed by the
-personnel department
-of a business might
-include such things
-as job responsibilities,
-required
-qualifications, advancement
-prospects.  
-        </pre>     
-</div>    
-     <div>
-          <div class="fs-5 my-2">Job profile summary</div>
-          <img src="./images/job-logo-circle3.png" alt="#" width="60" class="text-info burn border rounded-circle"> 
-      <pre>
-Profile summary is
-a summary of
-
-your education, skills,
-career
-
-experiences, and goals.
-      </pre>    
- </div>    
-     <div>
-          <div class="fs-5 my-2">The IT Skills</div>
-          <img src="./images/job-logo4.png" alt="#" width="60" class="text-info burn border rounded-circle">
-        <pre>
- Coding.
-
-Communication.
-          
-Networks.
-          
-Time Management.
-          
-More Information Technology Skills.  
-   </pre>
-     </div>    
-     <div>
-          <div class="fs-5 my-2">Fresher Key Skills</div>
-          <img src="./images/job-logo4.png" alt="#" width="60" class="text-info burn border rounded-circle">
-          <pre>
-Communication.2
-Ability to Work
-Under Pressure.
-Decision Making.
-Time Management.
-Self-motivation.
-Conflict Resolution.
-personal skills?
-Leadership.
-Adaptability
-          </pre>   
-     </div>    
-     <div>
-          <div class="fs-5 my-2">personal Skills</div>
-          <img src="./images/job-logo4.png" alt="#" width="60" class="bg-dark burn border rounded-circle"> 
-          <pre>
-A skill is the ability
-to do something
-well, a certain competence or
-proficiency. Skills are typically
-acquired or developed through
-direct experiences and training,
-and they can require
-sustained effort
-          </pre>  
-     </div>        
-  </div>
-<div class="line1">
-  <div>
-    <div class="circle-y mt-5">
-      <span>1</span>
-    </div>
-    <div class="ms-5 mb-2 fs-5">Why do you want this job?</div>
-    <div>
-      <p> The hiring manager wants to: Learn about your career goals and how this position fits into your plan. Make sure that you are sincerely interested in the job and will be motivated to perform if hired. Find out what you know about the company, industry, position (and if you took the time to research).</p>
-    </div>
-   </div>
-   <div>
-    <img src="./images/line1.png" alt="#" class="mt-5 me-4">
-   </div>
-</div>
-
-<div class="line2">
-   <div>
-    <img src="./images/line2.png" alt="#" class="mt-5 me-3">
-   </div>
-   <div>
-    <div class="circle-r mt-5">
-      <span>2</span>
-    </div>
-    <div class="mb-2 fs-5 ms-5">Why do you want this job?</div>
-    <div>
-      <p>  The hiring manager wants to: Learn about your career goals and how this position fits into your plan. Make sure that you are sincerely interested in the job and will be motivated to perform if hired. Find out what you know about the company, industry, position (and if you took the time to research).</p>
-    </div>
-   </div>
-</div>
-<div class="line3">
-  <div>
-    <div class="circle-g mt-5">
-      <span>3</span>
-    </div>
-    <div class="ms-5 mb-2 fs-5">Why do you want this job?</div>
-    <div>
-      <p>  The hiring manager wants to: Learn about your career goals and how this position fits into your plan. Make sure that you are sincerely interested in the job and will be motivated to perform if hired. Find out what you know about the company, industry, position (and if you took the time to research).</p>
-    </div>
-   </div>
-   <div>
-    <img src="./images/line3.png" alt="#" class="mt-5 ms-3">
-   </div>
-</div>
-
-<div class="line4">
-  <div>
-   <img src="./images/line2.png" alt="#" class="mt-5 me-3">
-  </div>
-  <div>
-   <div class="circle-b mt-5">
-     <span>4</span>
-   </div>
-   <div class="mb-2 fs-5 ms-5">Why do you want this job?</div>
-   <div>
-     <p>  The hiring manager wants to: Learn about your career goals and how this position fits into your plan. Make sure that you are sincerely interested in the job and will be motivated to perform if hired. Find out what you know about the company, industry, position (and if you took the time to research).</p>
-   </div>
-  </div>
-</div>
- <div align="center" class="my-5">
-  <button class="btn btn-info p-2 fs-5 text-white me-3">Request Call Back</button>
-  <button class="btn btn-secondary p-2 fs-5 text-white"> FAQ </button>
- </div>
- <div class="text-center fs-3 title2 pt-4">Student Department Details</div>
- <div class="student py-5">
-   <div class="ms-2">
-    <div class="fs-5">Average Salary Offered</div>
-    <div class="fs-2">INR 7 L per annum</div>
-    <span class="fs-5 ms-5">per annum</span>
-   </div>
-   <div>
-    <div class="fs-5">Duration</div>
-    <div class="fs-2 ms-3">2</div>
-    <span class="fs-5">Years</span>
-   </div>
-   <div>
-     <div class="fs-5">Average Fees Incurred</div>
-     <div class="fs-2">INR 25,000 - 2 L</div>
-     <span class="fs-5 ms-5"> per annum</span>
-   </div>
-   <div>
-    <div class="fs-5">India Institute of Technologies,IIT[Kanpur]</div>
-    <div class="fs-2 text-center">39,035</div>
-    <div class="fs-5 text-center">Kanpur</div>
-   </div>
- </div>
- <div class="title2 text-center pb-4">* job: A group of homogeneous tasks related by similarity of functions.</div>
-
-  <div class="text-center my-4 fs-3 fw-bold" id="survice">SERVICES</div>
-  <div class="d-flex justify-content-around my-5">
-  <div class="box">
-    <img src="./images/web-pic1.jpg" alt="#" height="250" width="250" class="ms-5">
-   <div class="ms-3 fw-bold p-3">WEB DESIGN!!</div>
-   <pre class="ms-4">
-Online ordering system helps to maintain a Better
-Business Relationship with your customers, which
-is a key factor to run any successful business.</pre>
-  </div>
-  <div class="box">
-   <img src="./images/it-pic2.png" alt="#" class="ms-5">
-  <div class="ms-3 fw-bold p-3">IT SERVICES!!</div>
-  <pre class="ms-4">
-We are ideally located in Larbert meaning we can
-offer IT support to businesses throughout Scotland.
-We take the hassle and worry out of your IT system
-by providing preventative and proactive IT support.
-  </pre>
-  </div>
-  <div class="box">
-    <img src="./images/web_marketing-pic.png" alt="#" height="230" width="230" class="ms-5">
-  <div class="ms-3 fw-bold p-3">WEB MARKETING!!</div>
-  <pre class="ms-4">
-We are passionate about digital content creation,
-strategy and delivery. We deliver results by
-designing marketing strategies which improve our
-clients brand visibility.
-  </pre>
-  </div>
- </div>
-
- <div class="text-center bg-dark text-white py-5 fs-5 shadow">Naresh Technologies</div>
- <div class="d-flex justify-content-around bg-dark text-white pb-4">
-  <div>
-    <ul class="shadow">
-      <li class="bi bi-facebook"> Facebook</li>
-      <li class="bi bi-google"> Google</li>
-      <li class="bi bi-twitter"> Twitter</li>
-      <li class="bi bi-youtube"> Youtube</li>
-    </ul>
-  </div>
-  <div>
-    <ul class="shadow">
-      <li>Home</li>
-      <li>About</li>
-      <li>Service</li>
-      <li>Contact</li>
-    </ul>
-  </div>
-  <div>
-    <ul class="shadow">
-     <li> Name : Naresh Istitute</li>
-     <li>Email : info@nareshit.com</li>
-     <li> Contact : +91-xxxxxxxxxx</li>
-     <li> Address : Sr nagar, Hyderabad, Telangana, India</li>
-    </ul>
-  </div>
- </div>
 </body>
 </html>
