@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Table</title>
+          <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+          <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+          <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+          <style>
+              .dropdown li{
+          cursor: pointer;
+         }
+         .bi-star-fill{
+          color: red;
+         }
+         .bi-eye:hover{
+          cursor: pointer;
+          color:chartreuse;
+         }
+         .bi-eye{
+          color: yellow;
+         }
+         td a{
+          height: 15px;
+         }
+          </style>
+</head>
+<body class="container-fluid">
+  <div class="modal fade" id="login-it">
+    <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+       <div class="modal-header">
+          <div class="fs-3 mb-5" align="center">Plesase Login Your Account</div>
+          <button class="btn btn-close" data-bs-dismiss="modal"></button>
+       </div>
+       <div class="modal-body">
+          <dl>
+             <dt>Name Id:</dt>
+           <div class="input-group">
+            <span class="bi bi-person input-group-text"></span>
+            <input type="text" name="user" placeholder="Enter name" class="form-control">
+            <span class="bi bi-star-fill input-group-text"></span>       
+           </div>
+             <dt>Password:</dt>
+            <div class="input-group">
+              <span class="bi bi-lock input-group-text"></span>
+             <input type="password" name="password" placeholder="Password" class="form-control">
+             <span class="bi bi-star-fill input-group-text"></span>
+            </div>
+          </dl>
+          <div class="d-flex justify-content-around">
+            <button class="btn btn-warning text-white bi bi-person"> SignUp</button>
+            <button class="btn btn-success text-white bi bi-arrow-right-square"> SignIn</button>
+          </div>
+       </div>
+     </div>
+    </div>      
+   </div>       
+  
+   <div class="modal fade" id="SignUp">
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+         <div class="modal-header">
+         <div class="center fs-3 ms-5"> Registration Form</div>
+         <button class="btn btn-close" data-bs-dismiss="modal"></button>
+         </div>
+         <div class="modal-body">
+          <dl>
+            <dt>Full Name:</dt>
+             <input type="text" name="user" placeholder="Full Name" class="form-control">
+             <dt>Email Id:</dt>
+             <input type="email" name="email" id="Email Id" class="form-control">
+             <dt>Number:</dt>
+             <input type="text" name="user" placeholder="Full Name" class="form-control" placeholder="Enter phone">
+             <dt>DOB:</dt>
+             <input type="date" name="email" id="Email Id" class="form-control" placeholder="Date of Birth">
+             <dt>Password:</dt>
+             <input type="password" name="password" placeholder="password" class="form-control">
+             <dt>Confirm password:</dt>
+             <input type="password" name="password" placeholder="Confirm password" class="form-control">
+             <label for="gender" class="my-3">Gender:</label>
+             <input type="radio" name="gender" id="gender">Male
+             <input type="radio" name="gender" id="gender">Female <br>
+             <input type="checkbox" name="checkbox">
+             <p>I've read and Accept the Terms and Conditions</p>
+             <div class="d-flex justify-content-around">
+              <button class="btn btn-warning text-white">Already have an account</button>
+              <button class="btn btn-success text-white">Register</button>
+             </div>
+          </dl>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <div class="modal fade" id="password">
+    <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+      <div class="modal-header">
+       <div class="fs-3 ms-5 fw-bold"> Forget Password:</div>
+       <button class="btn btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+<div class="input-group my-3">
+  <span class="bi bi-star-fill input-group-text"></span>
+  <input type="password" name="password" placeholder="Current password" class="form-control">
+</div> 
+<div class="input-group my-2">
+  <span class="bi bi-star-fill input-group-text"></span>
+  <input type="password" name="password" placeholder="New password" class="form-control">
+</div>    
+   <div class="input-group">
+    <span class="bi bi-star-fill input-group-text"></span>
+    <input type="password" name="password" placeholder="Confirm password" class="form-control">
+   </div>
+   <button class="btn btn-success text-white my-4 ms-5" align="right"> Change password</button>
+      </div>
+     </div>
+    </div>
+   </div>
+
+          <div class="text-center my-3 p-4 fs-2 fw-bold">Naresh Institute and Technologies</div>
+          <div class="bg-dark">
+             <div class="d-flex justify-content-between">
+             <div>
+              <ul class="nav bg-dark p-2 rounded w-100">
+                <li class="nav-item"> <a class="nav-link bi bi-house-fill text-white active" href="naresh_it.html"> Home</a></li> 
+                <li class="nav-item"> <a class="nav-link bi bi-question-circle text-white" href="it_table.html"> About</a></li>
+                <li class="nav-item"> <a class="nav-link bi bi-question-circle text-white" href="servive_it.html"> Service</a></li>
+                <li class="nav-item"> <a class="nav-link text-primary bi bi-telephone text-white" href="contact-it.html"> Contact Us</a></li> 
+                </ul> 
+             </div>
+              <div class="mt-2">
+                  <div class="dropdown">
+                    <button class="dropdown-toggle bg-dark btn btn-dark fs-5 text-white" data-bs-toggle="dropdown"><span class="bi bi-arrow-right-square"></span> Sign In</button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item bi bi-arrow-right-square" data-bs-toggle="modal" data-bs-target="#login-it"> Sign In</a></li>
+                        <li><a class="dropdown-item bi bi-person-fill" data-bs-target="#SignUp" data-bs-toggle="modal"> Sign Up</a></li>
+                        <li><a class="dropdown-item bi bi-lock" data-bs-target="#password" data-bs-toggle="modal"> Change Password</a></li>
+                      </ul>
+                  </div>
+              </div>
+             </div>
+            </div>
+            <div class="modal fade" id="angular">
+             <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                 <div class="fs-4 ms-5">Details:</div>
+                 <button class="btn btn-close bg-info" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-around">
+                  <div class="me-5 text-info">
+                    <div>Course:</div>
+                    <div>Faculty:</div>
+                    <div>Duration:</div>
+                    <div>Timings:</div>
+                  </div>
+                  <div class="ms-5 text-danger">
+                    <div>Angular 8</div>
+                    <div>Shudakhar Sharma Sir</div>
+                    <div>45 Days</div>
+                    <div>07:30AM</div>
+                    <p>Angular 8 is a client-side TypeScript based framework <br>
+                      which is used to create dynamic web <br>
+                     It is very similar to its previous versions except having some extensive features.</p>
+                  </div>
+                </div>
+                <button class="btn btn-warning bi bi-bookmark-x-fill text-white w-25 text-right m-3" data-bs-dismiss="modal"> close</button>
+              </div>
+             </div>
+            </div>
+            <div class="modal fade" id="nodejs">
+              <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content bg-dark text-white">
+                 <div class="modal-header">
+                  <div class="fs-5 ms-5">Details:</div>
+                  <button class="btn btn-close bg-info" data-bs-dismiss="modal"></button>
+                 </div>
+                 <div class="modal-body d-flex justify-content-around">
+                   <div class="me-5 text-info">
+                     <div>Course:</div>
+                     <div>Faculty:</div>
+                     <div>Duration:</div>
+                     <div>Timings:</div>
+                   </div>
+                   <div class="ms-5 text-danger">
+                    <div>Node Js</div>
+                    <div>Sambha Sir</div>
+                    <div>45 Days</div>
+                    <div>09:00AM</div>
+                    <p>
+                      Node.js connects the ease of a scripting language <br>
+                       (JavaScript) with the power of Unix network programming. <br>
+                        Node.js was built on the Google V8 JavaScript engine <br>
+                        since it was open-sourced under the BSD license.
+                    </p>
+                   </div>
+                 </div>
+                 <button class="btn btn-warning bi bi-bookmark-x-fill text-white w-25 text-right m-3" data-bs-dismiss="modal"> close</button>
+               </div>
+              </div>
+             </div>
+             
+             <div class="modal fade" id="java">
+              <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content bg-dark text-white">
+                 <div class="modal-header">
+                  <div class="fs-5 ms-5">Details:</div>
+                  <button class="btn btn-close bg-info" data-bs-dismiss="modal"></button>
+                 </div>
+                 <div class="modal-body d-flex justify-content-around">
+                   <div class="me-5 text-info">
+                     <div>Course:</div>
+                     <div>Faculty:</div>
+                     <div>Duration:</div>
+                     <div>Timings:</div>
+                   </div>
+                   <div class="ms-5 text-danger">
+                    <div>JAVA</div>
+                    <div>Hari Krishan Sir</div>
+                    <div>60 Days</div>
+                    <div>04:30PM</div>
+                    <p>
+                      Java is an object-oriented programming language developed by <br>
+                      Sun Microsystems, and it was released in 1995. ... Java Virtual Machine <br>
+                       (JVM) executes Java code, but it has been written in platform-specific <br>
+                       languages such as C/C++/ASM, etc.
+                    </p>
+                    </p>
+                   </div>
+                 </div>
+                 <button class="btn btn-warning bi bi-bookmark-x-fill text-white w-25 text-right m-3" data-bs-dismiss="modal"> close</button>
+               </div>
+              </div>
+             </div>
+          <div class="bg-info text-center fs-4 p-2 my-3">Details</div>
+          <table cellpadding="8" cellspacing="10" border="1" class="w-100 mb-5">
+            <thead class="bg-warning">
+             <tr class="table-row">
+              <th>ID</th>
+              <th>Course Name</th>
+              <th>Faculty Name</th>
+              <th>Duration</th>
+              <th>Timings</th>
+              <th>View</th>
+             </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row border">
+              <td class="border">1</td>
+              <td class="border">Angular 8</td>
+              <td class="border">Shudakar Sharma Sir</td>
+              <td class="border">45 Days</td>
+              <td class="border">07:30 AM</td>
+              <td class="bi bi-eye border rounded bg-secondary"><a data-bs-target="#angular" data-bs-toggle="modal" class="text-white nav-link"> view</a></td>
+            </tr>
+            <tr class="table-row border">
+              <td class="border">2</td>
+              <td class="border">Node Js</td>
+              <td class="border">Sambha Sir</td>
+              <td class="border">45 Days</td>
+              <td class="border">07:30 AM</td>
+              <td class="bi bi-eye border rounded bg-secondary"><a data-bs-target="#nodejs" data-bs-toggle="modal" class="text-white nav-link"> view</a></td>
+            </tr>
+            <tr class="table-row border">
+              <td class="border">3</td>
+              <td class="border">JAVA</td>
+              <td class="border">Hari Krishna Sir Sir</td>
+              <td class="border">60 Days</td>
+              <td class="border">04:30 PM</td>
+              <td class="bi bi-eye border rounded bg-secondary"> <a data-bs-target="#java" data-bs-toggle="modal" class="text-white nav-link"> view</a></td>
+            </tr>
+            </tbody>
+          </table> 
+          
+          <div class="text-center bg-dark text-white py-5 fs-5 shadow">Naresh Technologies</div>
+          <div class="d-flex justify-content-around bg-dark text-white pb-4">
+           <div>
+             <ul class="shadow">
+               <li class="bi bi-facebook"> Facebook</li>
+               <li class="bi bi-google"> Google</li>
+               <li class="bi bi-twitter"> Twitter</li>
+               <li class="bi bi-youtube"> Youtube</li>
+             </ul>
+           </div>
+           <div>
+             <ul class="shadow">
+               <li>Home</li>
+               <li>About</li>
+               <li>Service</li>
+               <li>Contact</li>
+             </ul>
+           </div>
+           <div>
+             <ul class="shadow">
+              <li> Name : Naresh Istitute</li>
+              <li>Email : info@nareshit.com</li>
+              <li> Contact : +91-xxxxxxxxxx</li>
+              <li> Address : Sr nagar, Hyderabad, Telangana, India</li>
+             </ul>
+           </div>
+          </div>
+</body>
+</html>
